@@ -1,0 +1,33 @@
+.contact{
+    background-color: #00b0ff;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1001;
+    position: sticky;
+
+}
+.contact__optionOne{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.contact__optionTwo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px){
+    .contact{
+        display: flex;
+        z-index: 10010;
+    }
+}
