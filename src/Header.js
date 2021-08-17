@@ -12,14 +12,14 @@ import { useStateValue } from './StateProvider'
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const [{ cart }] = useStateValue();
-    const [anchorE1, setAnchorE1] = useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event) =>{
-        setAnchorE1(event.target)
+        setAnchorEl(event.target)
     }
 
     const handleClose = () =>{
-        setAnchorE1(null)
+        setAnchorEl(null)
     }
 
     return (
@@ -43,9 +43,9 @@ function Header() {
                         <Link to="/login" className="header__link">Sign In </Link>   
                         <DropDownIcon onClick={handleClick} />
                         </span>
-                        <Menu  id="dropdown-menu" anchorE1={anchorE1} keepMounted open={Boolean(anchorE1)} onClose={handleClose}>
-                        <MenuItem onClick={handleClose}><Link to="/login" className="header__signUp">Sign Up</Link> </MenuItem>
-                        <MenuItem onClick={handleClose}>Vendor Form</MenuItem>
+                        <Menu className="header__menu" id="dropdown-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+                        <MenuItem  onClick={handleClose}><Link to="/register" className="header__signUp">Sign Up</Link> </MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/register" className="header__signUp">Vendor Form</Link></MenuItem>
                         </Menu>
                     </div>
                 </div>

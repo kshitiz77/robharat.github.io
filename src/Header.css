@@ -46,7 +46,16 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.header__menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 4rem;
+}
 .header__signUp{
+    display: flex;
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -73,6 +82,7 @@
     display: flex; 
 }
 
+
 .hamburger__nav{
     display: none;
 
@@ -93,6 +103,7 @@
         padding: 0 10px;
         color: #fff;
         z-index: 101;
+        cursor: pointer;
     }
     .mobile__nav{
         display: block;

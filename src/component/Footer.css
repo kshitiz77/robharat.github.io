@@ -1,7 +1,127 @@
 .footer{
     display: flex;
-    justify-content: center;
-    background-color: #00b0ff;
+    flex-direction: column;
+    background-color: #01051d;
     color: #fff;
-    padding-bottom: 0px;
+}
+
+.footer__containerOne{
+ 
+    display: flex;
+    background-color: #0e153b;
+}
+
+.footer__row-2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1rem;
+}
+
+.footer__para > p{
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.footer__socialMedia{
+    display: flex;
+}
+
+.socialMedia__list{
+    padding: 10px;
+    list-style: none;
+}
+
+.socialMedia__icon{
+    color: #fff;
+}
+
+.footer__about > h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer__about{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__address{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__addressDetails{
+    display: flex;
+    padding-top: 5px;
+}
+.footer__addressDetails > p{
+    padding-left: 5px;
+}
+
+.footer__addressDetails > p > a{
+    color: #fff;
+    text-decoration: none;
+} 
+
+.footer__containerTwo{
+    display: flex;
+}
+
+.footer__input{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__input > input{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+
+.footer__input > button{
+    padding: 5px 33px;
+    background: #00b0ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:500px) {
+    .footer__containerOne{
+        flex-wrap: wrap;
+    }
+
+    .footer__row-2{
+        width: 100%;
+    }
+
+    .footer__containerTwo{
+        flex-wrap: wrap;
+    }
+
+    .footer__input > input{
+        margin-top: 10px;
+    }
+
+    .footer__input > button{
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:1250px) {
+    .footer__input > button{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:850px) {
+    .footer__input > input{
+        margin-top: 10px;
+    }
 }

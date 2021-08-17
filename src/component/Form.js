@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 import './Form.css'
-
+import { Link } from 'react-router-dom'
 function Form() {
     const [user, setUser] = useState({
         email:" ",
@@ -31,7 +31,7 @@ function Form() {
                     <input id="email" value={user.email} onChange={handleInput} name="email"  maxLength="128"/> 
                     </div>
                     <div className="form__input">
-                    <label>PassWord</label>
+                    <label>Password</label>
                     <input  type="password" id="password" value={user.password} onChange={handleInput} name="email"  maxLength="128"/> 
                     </div>
                     <button>Submit</button>
@@ -39,7 +39,7 @@ function Form() {
                 <div className="form__divider">
                     <p>New To RO Bharat?</p>
                 </div>
-                <button>Create your RO Bharat account</button>
+                <button><Link to="/register" className="header__signUp">Create your RO Bharat account</Link></button>
             </div>
         </div>
     )
