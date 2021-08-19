@@ -5,7 +5,6 @@ import{
         BrowserRouter as Router,
         Switch,
         Route,
-        Link
 }from 'react-router-dom';
 import Contact from './component/Contact';
 import Home from './component/Home';
