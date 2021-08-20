@@ -23,9 +23,6 @@ function SignUpForm() {
     return (
         <div className="registerForm">
             <div className="form__container">
-                <div className="form__logoContainer">
-                <img className="form__logo" src="/img/logo.png" alt=""/><p className="form__domain">.com</p>
-                </div>
                 <form onSubmit={submitData} className="form__mainContainer">
                     <p className="form__heading">Sign-Up</p>
                     <div className="form__input">
